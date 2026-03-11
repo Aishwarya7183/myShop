@@ -1,0 +1,53 @@
+.products {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px,1fr));
+  gap: 20px;
+  row-gap: 30px;
+}
+
+
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  transition: 0.3s;
+  position:relative;
+  ;
+}
+
+.dark .card {
+  background: #1e1e1e;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+}
+.card p{
+    margin-bottom: 40px;
+    text-align: center;
+}
+.card button {
+  width: 90%;
+  margin-top: 15px;
+  background: #4f46e5;
+  color: white;
+  border: none;
+  padding: 10px 6px;
+  border-radius: 6px;
+  position:absolute;
+  bottom:10px;
+  left:10px;
+  transition: 1s;
+}
+.card button:hover{
+    background: #2c278e;
+    cursor: pointer;
+}
