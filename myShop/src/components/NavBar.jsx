@@ -1,8 +1,9 @@
-import React from 'react'
+import React,{useState} from 'react'
 import '../styles/NavBar.css'
+import { FaShoppingCart,FaSun,FaMoon } from "react-icons/fa";
 
 
-function NavBar() {
+function NavBar({toggleDarkMode,darkMode}) {
   return (
   <nav className="navbar">
     <h1 className="logo">🛒 VanillaShop</h1>
@@ -14,9 +15,14 @@ function NavBar() {
         <span>🔍</span>
       </div>
 
-      <button id="themeToggle">🌙</button>
+      <button   onClick={()=>{toggleDarkMode()}} id="themeToggle" >
+        {darkMode ? <FaSun size={20} color="#4f46e5"/>: <FaMoon size={20} color="#4f46e5" />}
+      </button>
 
-      <button id="cartBtn">🛍️ <span id="cartCount">0</span></button>
+      <button id="cartBtn">
+        <FaShoppingCart size={20} color="#4f46e5"/>
+        <span id="cartCount">0</span>
+      </button>
     </div>
   </nav>
   )

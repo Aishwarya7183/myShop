@@ -14,11 +14,11 @@
   box-shadow: 0 0 8px rgba(0,0,0,0.1);
   transition: 0.3s;
   position:relative;
-  ;
+  
 }
 
-.dark .card {
-  background: #1e1e1e;
+.card.dark{
+  background-color: #1e1e1e;
 }
 
 .card:hover {

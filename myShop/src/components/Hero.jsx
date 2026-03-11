@@ -1,6 +1,8 @@
 import React from 'react'
 import '../styles/Hero.css'
 function Hero() {
+
+
   return (
     <section class="hero">
     <div className="hero-content">

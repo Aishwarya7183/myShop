@@ -33,8 +33,9 @@ nav button{
     border-radius: 50%;
     border:none;
     outline: none;
-    padding:10px;
+    padding:11px 12px;
     cursor: pointer;
+    text-align: center;
 }
 
 #cartBtn{
@@ -46,8 +47,12 @@ nav button{
     top:-5px;
     right:-5px;
     width:20px;
+    height: 20px;
     border-radius: 50%;
     color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 

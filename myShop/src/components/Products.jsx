@@ -1,6 +1,6 @@
 import React ,{useState,useEffect}from 'react'
 import '../styles/Products.css'
-function Products() {
+function Products({darkMode}) {
    const [product, setProduct] = useState([]);
     useEffect(() => {
     fetch("https://fakestoreapi.com/products")
@@ -20,7 +20,7 @@ function Products() {
         )}
         
         { product.map((item,index)=>(
-        <div key={item.id} className="card">
+        <div key={item.id} className={`card ${darkMode ? 'dark' : ' '}`}>
           <img src={item.image} alt={item.title} width="150"/>
           <h3>{item.title}</h3>
           <p>${item.price}</p>

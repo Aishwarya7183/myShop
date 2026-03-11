@@ -2,3 +2,8 @@
   margin:0px;
   padding:0px;
 }
+
+.dark_mode{
+  background: #121212;
+  color: white;
+}
