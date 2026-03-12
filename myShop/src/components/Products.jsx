@@ -1,6 +1,6 @@
 import React ,{useState,useEffect}from 'react'
 import '../styles/Products.css'
-function Products({darkMode}) {
+function Products({darkMode,addToCart}) {
    const [product, setProduct] = useState([]);
     useEffect(() => {
     fetch("https://fakestoreapi.com/products")
@@ -24,7 +24,9 @@ function Products({darkMode}) {
           <img src={item.image} alt={item.title} width="150"/>
           <h3>{item.title}</h3>
           <p>${item.price}</p>
-          <button>Add to Cart</button>
+          <button onClick={() => addToCart(item)}>
+            Add 
+          </button>
         </div>
 
 

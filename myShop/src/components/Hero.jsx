@@ -4,7 +4,7 @@ function Hero() {
 
 
   return (
-    <section class="hero">
+    <section className="hero">
     <div className="hero-content">
       <h1>Discover Your Next Favorite Product</h1>
       <p>

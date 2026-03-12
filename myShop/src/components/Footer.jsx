@@ -7,9 +7,9 @@ function Footer() {
 
 
     <div className="footer-section">
-      <h2>🛒 VanillaShop</h2>
+      <h2>🛒 My Shop</h2>
       <p>
-        VanillaShop is a modern e-commerce website built using pure HTML, CSS,
+        My Shop is a modern e-commerce website built using pure HTML, CSS,
         and JavaScript with data from a public API.
       </p>
       <p>Simple. Fast. Modern.</p>
@@ -43,7 +43,7 @@ function Footer() {
     <div className="footer-section">
       <h3>Contact</h3>
       <ul>
-        <li>Email: support@vanillashop.com</li>
+        <li>Email: support@myshop.com</li>
         <li>Phone: +91 98765 43210</li>
         <li>Location: India</li>
         <li>Mon - Sat (9AM - 6PM)</li>
