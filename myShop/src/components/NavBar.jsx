@@ -3,7 +3,7 @@ import '../styles/NavBar.css'
 import { FaShoppingCart,FaSun,FaMoon } from "react-icons/fa";
 
 
-function NavBar({toggleDarkMode,darkMode}) {
+function NavBar({toggleDarkMode,darkMode,toggleCart}) {
   return (
   <nav className="navbar">
     <h1 className="logo">🛒 VanillaShop</h1>
@@ -19,9 +19,10 @@ function NavBar({toggleDarkMode,darkMode}) {
         {darkMode ? <FaSun size={20} color="#4f46e5"/>: <FaMoon size={20} color="#4f46e5" />}
       </button>
 
-      <button id="cartBtn">
+      <button id="cartBtn" onClick={toggleCart}>
         <FaShoppingCart size={20} color="#4f46e5"/>
         <span id="cartCount">0</span>
+
       </button>
     </div>
   </nav>

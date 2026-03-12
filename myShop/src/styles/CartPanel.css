@@ -1,0 +1,44 @@
+.cart-panel {
+  position: fixed;
+  right: 0px;
+  top: 0;
+  width: 350px;
+  height: 100%;
+  background: white;
+  box-shadow: -2px 0 10px rgba(0,0,0,0.2);
+  padding: 15px;
+  transition: 0.3s;
+}
+
+.cart-panel.dark {
+  background-color: #1e1e1e;
+}
+
+.cart-panel.active {
+  right: 0;
+}
+
+.cart-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+#closeCart{
+  font-size: 18px;
+  border:none;
+  outline: none;
+  cursor: pointer;
+  font-weight: 900;
+  background: transparent;
+  
+}
+.qty button {
+  padding: 2px 6px;
+}
